@@ -1,0 +1,38 @@
+format = """
+$python\
+$directory\
+$git_branch\
+$git_status\
+$time\
+$character
+"""
+add_newline = false
+
+[line_break]
+disabled = true
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#1d2230"
+format = '[[$time ](fg:#a0a9cb bg:#1d223000)]($style)'
+
+[python]
+disabled = false
+symbol = ' 󱔎 '
+format = '[${symbol}${pyenv_prefix}(\($virtualenv\) )]($style)'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
