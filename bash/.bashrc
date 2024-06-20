@@ -24,6 +24,9 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+#nvim mode
+set -o vi
+
 #my aliases
 #git --bare repo
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles_fedora.git/ --work-tree=$HOME'
