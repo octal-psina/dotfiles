@@ -30,11 +30,19 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles_fedora.git/ --work-tree=$HOM
 unset rc
 alias vim="nvim"
 alias ll="ls -la"
+#zoxide
 alias cd="z"
+#lsdeluxe
+alias ls="lsd -F"
+alias la="lsd -AF"
+alias ll="lsd -lAF"
+alias lg="lsd -F --group-dirs=first"
+alias tree="lsd -AF --tree"
+
 #default apps
-#export EDITOR="nvim"
-#export TERMINAL="kitty"
-#export BROWSER="firefox"
+export EDITOR="nvim"
+export TERMINAL="kitty"
+export BROWSER="firefox"
 
 #auto start 
 fastfetch &&
