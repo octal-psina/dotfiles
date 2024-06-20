@@ -39,3 +39,5 @@ sudo dnf install -y btop
 sudo dnf install -y blueman
 sudo dnf install -y dunst
 sudo dnf install -y xpad
+sudo dnf install -y lsd
+sudo dnf install -y bat
