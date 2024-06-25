@@ -5,7 +5,7 @@ y 633
 follow_font 1
 follow_color 1
 sticky 0
-hidden 1
+hidden 0
 back rgb(238,238,236)
 text rgb(0,0,0)
 fontname UbuntuMono Nerd Font 20
