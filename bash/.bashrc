@@ -1,5 +1,9 @@
 # .bashrc
 
+# for setting history length 
+HISTSIZE=5000
+HISTFILESIZE=10000
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc

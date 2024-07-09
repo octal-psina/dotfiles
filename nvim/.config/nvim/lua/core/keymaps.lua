@@ -10,9 +10,8 @@
 local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 local term_opts = { silent = true }
-
---nvim tree keymapas
-vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>,term_opts')
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 -- Move text up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -31,16 +30,17 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
---telescope
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<space>ff', builtin.find_files, {})
-vim.keymap.set('n', '<space>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<C-p>', builtin.git_files, {})
-vim.keymap.set('n', '<C-t>', ':Telescope<CR>,term_opts')
-
---Cursor alinig
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
+----telescope
+--local builtin = require('telescope.builtin')
+--vim.keymap.set('n', '<space>ff', builtin.find_files, {})
+--vim.keymap.set('n', '<space>fg', builtin.live_grep, {})
+--vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+--vim.keymap.set('n', '<C-t>', ':Telescope<CR>,term_opts')
+----nvim tree keymapas
+--vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>,term_opts')
+----Cursor alinig
+--vim.keymap.set("n", "n", "nzzzv")
+--vim.keymap.set("n", "N", "Nzzzv")
 
 
 
