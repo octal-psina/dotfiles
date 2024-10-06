@@ -27,7 +27,7 @@ vim.opt.colorcolumn = "80"
 --vim.g.netrw_list_hide = (vim.fn["netrw_gitignore#Hide"]()) .. [[,\(^\|\s\s\)\zs\.\S\+]] -- use .gitignore
 
 --python3 provider
-vim.g.python3_host_prog = '/usr/bin/python3.12' --enable
+vim.g.python3_host_prog = '/usr/bin/python3.11' --enable
 --vim.g.loaded_python3_provider = 0 disable
 
 --Nodejs I DONT KNOW WTF IS THIS

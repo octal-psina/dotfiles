@@ -53,7 +53,7 @@ return {
     lualine.setup({
       options = {
         --theme = 'dracula',
-        theme = 'dracula',
+        theme = 'modus-vivendi',
       },
       sections = {
         lualine_x = {
