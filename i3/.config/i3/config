@@ -186,8 +186,21 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+mode "Exit" {
+	bindsym l exec i3-msg exit
+	bindsym r exec systemctl -i reboot
+	bindsym s exec systemctl -i poweroff
+	bindsym e mode "default"; exec pkill -15 nagbar
+	bindsym Escape mode "default"; exec pkill -15 nagbar
+}
 
+bindsym $mod+Shift+e mode "Exit"; exec i3-nagbar \
+	-t warning \
+	-m '❕ SESSION EXIT OPTIONS' \
+	-B '❌ [L]ogout' 	'i3-msg exit' \
+	-B '🌀️ [R]estart'	'systemctl -i reboot' \
+	-B '⚡️ [S]hutdown'	'systemctl -i poweroff' 
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -230,17 +243,17 @@ bar {
         statusline #F8F8F2 #old color #a1aab8  
         separator  #44475A
 
-        focused_workspace  #61668140 #61668140 #E1F8F4
-        active_workspace   #393C4B40 #393C4B40 #F8F8F2
-        inactive_workspace #393C4B40 #393C4B40 #BFBFBF
-        urgent_workspace   #FF555540 #FF555540 #E1F8F4
-        binding_mode       #FF555540 #FF555540 #E1F8F4
+        focused_workspace  #6272a4 #6272a4 #f8f8f2
+        active_workspace   #44475a #44475a #F8F8F2
+        inactive_workspace #282a36 #282a36 #BFBFBF
+        urgent_workspace   #FF5555 #FF5555 #f8f8f2
+        binding_mode       #FF5555 #FF5555 #f8f8f2
 
     }
 }
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #585D62A6 #585D6sudo fc-cache -fv2A6 #F8F8F2 #585D62A6 #585D62A6
+client.focused          #585D62 #585D62 #F8F8F2 #585D62   #585D62
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
 client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
@@ -249,7 +262,7 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
 #Apps shortcuts
-bindsym $mod+ctrl+f exec firefox
+bindsym $mod+ctrl+f exec librewolf
 bindsym $mod+ctrl+s exec subl
 bindsym $mod+ctrl+d exec nemo
 bindsym $mod+ctrl+o exec okular

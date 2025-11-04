@@ -10,7 +10,7 @@ return {
         --"L3MON4D3/LuaSnip",
         {
           "L3MON4D3/LuaSnip",
-          version = "v2.3",
+          version = "v2.4",
           build = "make install_jsregexp",
           dependencies = { "rafamadriz/friendly-snippets" },-- useful snippets
         },

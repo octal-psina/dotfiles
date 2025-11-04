@@ -8,6 +8,7 @@
 
 # font_family      monospace
  font_family      LiterationMono Nerd Font 
+# font_family      UbuntuMono Nerd Font 
 # font_family      FiraCode Nerd Font 
  bold_font        auto
  italic_font      auto
@@ -1113,7 +1114,7 @@ symbol_map U+21B5,U+25B8,U+2605,U+2630,U+2632,U+2714,U+E0A3,U+E615,U+E62B Symbol
 
 #: The foreground and background colors.
 
- background_opacity 0.7
+ background_opacity 0.9
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -2384,13 +2385,13 @@ symbol_map U+21B5,U+25B8,U+2605,U+2630,U+2632,U+2714,U+E0A3,U+E615,U+E62B Symbol
 #: Quit kitty
 
 # map cmd+q quit
-
+map ctrl+shift+r no_op
 #: }}}
 
 #: }}}
 
 
 # BEGIN_KITTY_THEME
-# Rosé Pine Moon
+# Snazzy
 include current-theme.conf
 # END_KITTY_THEME

@@ -49,7 +49,7 @@ alias tree="lsd -AF --tree"
 #default apps
 export EDITOR="nvim"
 export TERMINAL="kitty"
-export BROWSER="firefox"
+export BROWSER="librewolf"
 
 #auto start 
 fastfetch &&
