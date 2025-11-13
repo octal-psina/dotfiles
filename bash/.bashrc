@@ -29,7 +29,7 @@ fi
 unset rc
 
 #nvim mode
-set -o vi
+#set -o vi
 
 #my aliases
 #git --bare repo
