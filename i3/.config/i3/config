@@ -247,11 +247,11 @@ bar {
         statusline #F8F8F2 #old color #a1aab8  
         separator  #44475A
 
-        focused_workspace  #6272a4 #6272a4 #f8f8f2
+        focused_workspace  #4c566a #4c566a #f8f8f2
         active_workspace   #44475a #44475a #F8F8F2
         inactive_workspace #282a36 #282a36 #BFBFBF
-        urgent_workspace   #FF5555 #FF5555 #f8f8f2
-        binding_mode       #FF5555 #FF5555 #f8f8f2
+        urgent_workspace   #bf616a #bf616a #f8f8f2
+        binding_mode       #bf616a #bf616a #f8f8f2
 
     }
 }
@@ -260,7 +260,7 @@ bar {
 client.focused          #585D62 #585D62 #F8F8F2 #585D62   #585D62
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
 client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.urgent           #44475A #bf616a #F8F8F2 #bf616a   #bf616a
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 client.background       #F8F8F2
